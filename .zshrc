@@ -130,3 +130,4 @@ export BROWSER=wslview
 
 # add neovim to path
 export PATH="$PATH:/opt/nvim-linux64/bin"
+
