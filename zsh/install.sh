@@ -1,6 +1,9 @@
 # install zsh
-if [ ! -d /usr/binnzsh ]; then
+if [ ! -f "/usr/bin/zsh" ]; then
+    echo installing zsh
 	sudo apt install zsh
+    # make it the default shell
+    chsh -s $(which zsh)
 fi
 
 # install oh my zsh
@@ -26,5 +29,5 @@ if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k" ]; then
 fi
 
 # overwrite config files
-mv .zshrc $HOME
-mv .p10k.zsh $HOME
+mv dotfiles/zsh/.zshrc $HOME
+mv dotfiles/zsh/.p10k.zsh $HOME
