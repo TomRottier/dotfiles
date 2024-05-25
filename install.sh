@@ -13,7 +13,7 @@ source ${root}/fzf/install.sh
 # key bindings and completions in .zshrc
 
 # install bat
-source install ${root}/bat/install.sh
+source ${root}/bat/install.sh
 
 
 # link to config files
