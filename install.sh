@@ -15,6 +15,9 @@ source ${DOTFILE_DIR}/fzf/install.sh
 # install bat
 source ${DOTFILE_DIR}/bat/install.sh
 
+# insstall julia
+source ${DOTFILE_DIR}/julia/install.sh
+
 
 # link to config files
 [ -f ./.zshrc ] && rm ./.zshrc
