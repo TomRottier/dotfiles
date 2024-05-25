@@ -29,9 +29,14 @@ if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k" ]; then
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 fi
 
-# overwrite config files
-cp dotfiles/zsh/.zshrc $HOME
-cp dotfiles/zsh/.p10k.zsh $HOME
+# # install fzf
+# if [ "$(which fzf >> /dev/null)" -ne 0 ]; then
+# 	sudo apt install fzf
+# fi
 
-source .zshrc
-zsh
+# overwrite config files
+# cp dotfiles/zsh/.zshrc $HOME
+# cp dotfiles/zsh/.p10k.zsh $HOME
+#
+# source .zshrc
+# zsh

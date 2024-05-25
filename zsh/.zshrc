@@ -43,3 +43,11 @@ export BROWSER=wslview
 # add neovim to path
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
+# Set up fzf key bindings and fuzzy completion
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
