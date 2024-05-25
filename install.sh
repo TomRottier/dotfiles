@@ -21,7 +21,7 @@ source ${root}/bat/install.sh
 ln -s ${root}/zsh/.zshrc ~/.zshrc
 [ -f ~/.p10k.zsh ] && rm ~/.p10k.zsh
 ln -s ${root}/zsh/.p10k.zsh ~/.p10k.zsh
-[ -d ~/.config/nvim ] && mkdir -p ~/.config/nvim/
+[ ! -d ~/.config/nvim ] && mkdir -p ~/.config/nvim/
 ln -s ${root}/nvim/init.lua ~/.config/nvim/init.lua
 
 # symlinks
