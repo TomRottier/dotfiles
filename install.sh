@@ -1,4 +1,4 @@
-!#/usr/bin/ 
+#!/usr/bin/ 
 
 root=./dotfiles
 
