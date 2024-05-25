@@ -1,4 +1,4 @@
-#!/usr/bin/ 
+#!/usr/bin/bash
 
 DOTFILE_DIR=./dotfiles
 
