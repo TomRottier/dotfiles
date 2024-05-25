@@ -22,7 +22,7 @@ ln -s ${root}/zsh/.p10k.zsh ~/.p10k.zsh
 ln -s ${root}/nvim/init.lua ~/.config/nvim/init.lua
 
 # symlinks
-[ ! -d "~/.local/bin/ ] && mkdir -p ~/.local/bin
+[ ! -d ~/.local/bin/ ] && mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 ln -s /usr/bin/python3 ~/.local/bin/python
 
