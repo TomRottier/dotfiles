@@ -1,4 +1,4 @@
 if [ ! -f /usr/bin/fzf ]; then
-	echo installing fzf
+	echo -e "\e[36minstalling fzf\e[0m"
 	apt install fzf
 fi
