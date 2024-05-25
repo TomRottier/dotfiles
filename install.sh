@@ -9,11 +9,11 @@ source ${root}/zsh/install.sh
 source ${root}/nvim/install.sh
 
 # install fzf
-source ${root}/fzf.sh
+source ${root}/fzf/install.sh
 # key bindings and completions in .zshrc
 
 # install bat
-source install ${root}/bat.sh
+source install ${root}/bat/install.sh
 
 
 # link to config files
