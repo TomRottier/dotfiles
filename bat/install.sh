@@ -1,3 +1,3 @@
 if [ ! -f /usr/bin/batcat ]; then
-	sudo apt install bat
+	apt install bat
 fi

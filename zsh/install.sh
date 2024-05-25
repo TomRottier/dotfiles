@@ -1,7 +1,7 @@
 # install zsh
 if [ ! -f "/usr/bin/zsh" ]; then
     echo installing zsh
-	sudo apt install zsh
+    apt install zsh
     # make it the default shell
     chsh -s $(which zsh)
 fi
