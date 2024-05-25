@@ -1,28 +1,28 @@
 #!/usr/bin/ 
 
-root=./dotfiles
+DOTFILE_DIR=./dotfiles
 
 # install zsh and plugins
-source ${root}/zsh/install.sh
+source ${DOTFILE_DIR}/zsh/install.sh
 
 # install neovim
-source ${root}/nvim/install.sh
+source ${DOTFILE_DIR}/nvim/install.sh
 
 # install fzf
-source ${root}/fzf/install.sh
+source ${DOTFILE_DIR}/fzf/install.sh
 # key bindings and completions in .zshrc
 
 # install bat
-source ${root}/bat/install.sh
+source ${DOTFILE_DIR}/bat/install.sh
 
 
 # link to config files
 [ -f ./.zshrc ] && rm ./.zshrc
-ln -s ${root}/zsh/.zshrc ./.zshrc
+ln -s ${DOTFILE_DIR}/zsh/.zshrc ./.zshrc
 [ -f ./.p10k.zsh ] && rm ./.p10k.zsh
-ln -s ${root}/zsh/.p10k.zsh ./.p10k.zsh
+ln -s ${DOTFILE_DIR}/zsh/.p10k.zsh ./.p10k.zsh
 [ ! -d ./.config/nvim ] && mkdir -p ./.config/nvim/
-ln -s ${root}/nvim/init.lua ./.config/nvim/init.lua
+ln -s ${DOTFILE_DIR}/nvim/init.lua ./.config/nvim/init.lua
 
 # symlinks
 [ ! -d ./.local/bin/ ] && mkdir -p ./.local/bin
