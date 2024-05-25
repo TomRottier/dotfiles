@@ -1,6 +1,6 @@
-!#/usr/bin/env bash
+!#/usr/bin/bash 
 
-root=${HOME}/dotfiles
+root=~/dotfiles
 
 # install zsh and plugins
 source ${root}/zsh/install.sh
